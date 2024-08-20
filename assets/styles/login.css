@@ -1,0 +1,68 @@
+/* Estilos globais */
+body,
+html {
+  margin: 0; /* Remove a margem padrão dos elementos body e html */
+  padding: 0; /* Remove o padding padrão dos elementos body e html */
+  font-family: Arial, sans-serif; /* Define a fonte padrão para Arial, e caso não tenha, para sans-serif */
+  background-color: #ee7e22; /* Define uma cor de fundo laranja para toda a página */
+  min-height: 100vh; /* Garante que a altura mínima do body seja 100% da altura da janela (viewport) */
+}
+
+/* Estilos para a página de login */
+.login-container {
+  position: relative; /* Define o contexto de posicionamento como relativo para elementos filhos */
+  height: 100vh; /* Define a altura do container para 100% da altura da janela (viewport) */
+  display: flex; /* Utiliza flexbox para alinhar os elementos filhos */
+  justify-content: flex-end; /* Alinha o modal no lado direito do container */
+  align-items: center; /* Centraliza verticalmente o modal dentro do container */
+  padding: 20px; /* Adiciona 20px de padding ao redor do conteúdo do container */
+  box-sizing: border-box; /* Inclui padding e bordas na largura e altura totais do elemento */
+}
+
+.modal {
+  background-color: white; /* Define o fundo do modal como branco */
+  border-radius: 10px; /* Adiciona bordas arredondadas de 10px ao modal */
+  padding: 20px; /* Adiciona 20px de padding dentro do modal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do modal para dar profundidade */
+  width: 320px; /* Define a largura do modal em 320px */
+  margin-right: 20px; /* Adiciona uma margem de 20px à direita do modal */
+  text-align: center; /* Centraliza o texto dentro do modal */
+}
+
+.modal label {
+  display: block; /* Exibe os labels como blocos, ocupando toda a largura disponível */
+  margin: 10px 0 5px; /* Adiciona uma margem de 10px em cima e 5px embaixo dos labels */
+  color: #333; /* Define a cor do texto dos labels como um preto suave */
+  text-align: left; /* Alinha o texto dos labels à esquerda */
+}
+
+.modal input {
+  width: calc(
+    100% - 16px
+  ); /* Define a largura dos inputs como 100% do container, menos 16px (para compensar o padding) */
+  padding: 10px; /* Adiciona 10px de padding dentro dos inputs */
+  margin-bottom: 15px; /* Adiciona uma margem inferior de 15px entre os inputs */
+  border: 1px solid #ccc; /* Adiciona uma borda de 1px de cor cinza claro aos inputs */
+  border-radius: 5px; /* Adiciona bordas arredondadas de 5px aos inputs */
+  font-size: 14px; /* Define o tamanho da fonte dos inputs para 14px */
+}
+
+.modal button {
+  width: 100%; /* Define a largura do botão como 100% da largura do modal */
+  padding: 10px; /* Adiciona 10px de padding dentro do botão */
+  background-color: #ff7f00; /* Define o fundo do botão como laranja */
+  border: none; /* Remove a borda padrão do botão */
+  border-radius: 5px; /* Adiciona bordas arredondadas de 5px ao botão */
+  color: white; /* Define a cor do texto do botão como branca */
+  font-size: 16px; /* Define o tamanho da fonte do texto do botão para 16px */
+  cursor: pointer; /* Altera o cursor para o ícone de "mão" quando o usuário passa o mouse sobre o botão */
+}
+
+.modal button:hover {
+  background-color: #e56f00; /* Altera a cor do fundo do botão para um laranja mais escuro quando o botão é "hovered" */
+  background-color: #196b01; /*Altera a cor do fundo do botão para um laranja mais escuro quando o botão é "hovered" */
+  /* color:black; */
+  /* transform: scale(1.05); Aumenta o tamanho do botão em 5% quando "hovered" */
+  text-shadow: 2px 4px 8px rgba(237, 254, 0, 0.952); /* Adiciona uma sombra ao texto quando o botão é "hovered" */
+  opacity: 0.4;
+}

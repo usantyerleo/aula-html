@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Inicial</title>
+  </head>
+  <body>
+    Página Inicial
+    <form action="/SoftBank/pages/login.html" method="get">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="CPF">CPF:</label>
+            <input
+            type="text"
+            name="CPF"
+            id="CPF"
+            placeholder="000.000.000-00"
+            maxlength="14"
+            oninput="maskCPF(this)"
+          />
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+    <script src="/SoftBank/assets/scripts/login.js"></script>
+  </body>
+</html>
