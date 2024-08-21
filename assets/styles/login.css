@@ -1,10 +1,10 @@
-/* Estilos globais */
 body,
 html {
   margin: 0; /* Remove a margem padrão dos elementos body e html */
+  background-color: #ededed;
   padding: 0; /* Remove o padding padrão dos elementos body e html */
   font-family: Arial, sans-serif; /* Define a fonte padrão para Arial, e caso não tenha, para sans-serif */
-  background-color: #ee7e22; /* Define uma cor de fundo laranja para toda a página */
+   /* Define uma cor de fundo laranja para toda a página */
   min-height: 100vh; /* Garante que a altura mínima do body seja 100% da altura da janela (viewport) */
 }
 
@@ -20,13 +20,14 @@ html {
 }
 
 .modal {
-  background-color: white; /* Define o fundo do modal como branco */
+  background-color: #ededed; /* Define o fundo do modal como branco */
   border-radius: 10px; /* Adiciona bordas arredondadas de 10px ao modal */
   padding: 20px; /* Adiciona 20px de padding dentro do modal */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do modal para dar profundidade */
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do modal para dar profundidade */
   width: 320px; /* Define a largura do modal em 320px */
-  margin-right: 20px; /* Adiciona uma margem de 20px à direita do modal */
+  margin-right: 0px; /* Adiciona uma margem de 20px à direita do modal */
   text-align: center; /* Centraliza o texto dentro do modal */
+  height: 350px;
 }
 
 .modal label {
@@ -41,22 +42,24 @@ html {
     100% - 16px
   ); /* Define a largura dos inputs como 100% do container, menos 16px (para compensar o padding) */
   padding: 10px; /* Adiciona 10px de padding dentro dos inputs */
-  margin-bottom: 15px; /* Adiciona uma margem inferior de 15px entre os inputs */
+  margin-bottom: 5px; /* Adiciona uma margem inferior de 15px entre os inputs */
   border: 1px solid #ccc; /* Adiciona uma borda de 1px de cor cinza claro aos inputs */
-  border-radius: 5px; /* Adiciona bordas arredondadas de 5px aos inputs */
+  border-radius: 25px; /* Adiciona bordas arredondadas de 5px aos inputs */
   font-size: 14px; /* Define o tamanho da fonte dos inputs para 14px */
 }
 
 .modal button {
   width: 100%; /* Define a largura do botão como 100% da largura do modal */
   padding: 10px; /* Adiciona 10px de padding dentro do botão */
-  background-color: #ff7f00; /* Define o fundo do botão como laranja */
+  background-color: #008bd2; /* Define o fundo do botão como laranja */
   border: none; /* Remove a borda padrão do botão */
-  border-radius: 5px; /* Adiciona bordas arredondadas de 5px ao botão */
+  border-radius: 25px; /* Adiciona bordas arredondadas de 5px ao botão */
   color: white; /* Define a cor do texto do botão como branca */
   font-size: 16px; /* Define o tamanho da fonte do texto do botão para 16px */
+ margin-top: 40px;
   cursor: pointer; /* Altera o cursor para o ícone de "mão" quando o usuário passa o mouse sobre o botão */
 }
+
 
 .modal button:hover {
   background-color: #e56f00; /* Altera a cor do fundo do botão para um laranja mais escuro quando o botão é "hovered" */
@@ -65,4 +68,30 @@ html {
   /* transform: scale(1.05); Aumenta o tamanho do botão em 5% quando "hovered" */
   text-shadow: 2px 4px 8px rgba(237, 254, 0, 0.952); /* Adiciona uma sombra ao texto quando o botão é "hovered" */
   opacity: 0.4;
+}
+ 
+.logo {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.title{
+  margin-bottom: 40px;
+}
+
+.background {
+  display: flex;
+
+}
+
+.container-mae {
+  display: flex;
+  width: 100vw;           /* Define a largura do GIF para 100% da largura da viewport (100% da tela visível) */
+  height: 100vh;          /* Define a altura do GIF para 100% da altura da viewport (100% da tela visível) */
+  object-fit: cover;      /* Faz com que o GIF cubra toda a área definida (100% da largura e altura), mantendo a proporção e cortando se necessário para preencher a tela */
+  position: absolute;     /* Posiciona o GIF de forma absoluta, tirando-o do fluxo normal do documento */
+  top: 0;                 /* Posiciona o GIF no topo da viewport */
+  left: 0;  
 }
